@@ -1,44 +1,43 @@
-const express = require('express');
-const app = module.exports = express();
-var bodyParser = require('body-parser');
-const path = require('path');
+const express = require('express')
+const app = module.exports = express()
+const bodyParser = require('body-parser')
+const path = require('path')
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 /**
  * Set `views` directory for module
  */
 
- app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'))
 
- /**
+/**
   * Set `view engine` to `pug`.
   */
- 
- app.set('view engine', 'pug');
+
+app.set('view engine', 'pug')
 
 /**
  * Link models with
  * mongoDB database
  */
 
- require('./lib/models')(app);
+require('./lib/models')(app)
 
- /**
+/**
  * routes application
  */
 
-require('./lib/routes')(app);
+require('./lib/routes')(app)
 
-
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001
 const server = app.listen(port, () => {
-    console.log(`Express server listening on port ${port}.\nEnvironment: ${process.env.NODE_ENV}`);
-});
+  console.log(`Express server listening on port ${port}.\nEnvironment: ${process.env.NODE_ENV}`)
+})
 
- app.get('/data', function (req, res) {
+app.get('/data', function (req, res) {
   res.render('index', {
-    title: 'DigiScheduler Backend API',
-  });
-});
+    title: 'DigiScheduler Backend API'
+  })
+})
