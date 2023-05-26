@@ -1,7 +1,6 @@
 .vscode
 package-lock.json
 .eslintrc.json
-.env
 
 # ignore ALL .log files
 *.log

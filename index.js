@@ -31,7 +31,7 @@ require('./lib/models')(app)
 
 require('./lib/routes')(app)
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT
 app.listen(port, () => {
   console.log(`Express server listening on port ${port}.\nEnvironment: ${process.env.NODE_ENV}`)
 })
