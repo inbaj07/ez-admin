@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "chance": "^1.1.11",
     "dotenv": "^16.0.3",
@@ -19,6 +20,7 @@
     "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "random-number": "^0.0.9",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "ytdlp-nodejs": "^0.1.4"
   }
 }
