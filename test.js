@@ -141,7 +141,16 @@ numbersCopyCloning.push([4]);
 console.log(numbersCopyCloning); //[ [ 1 ], [ 2 ], [ 3 ], [ 4 ] ]
 console.log(nestedNumbers); //[ [ 1 ], [ 2 ], [ 3 ] ]
  */
-
+//structuredClone/Cloning an array
+/* let arr2 = [1,2,3,4];
+const arr1 = [
+  {
+    name:'inba',
+    data:{test:structuredClone(arr2)}
+  }
+]
+arr2.push(1)
+console.log(arr1[0].data) */
 //flat array
 
 /* const arr = [1,2,3,[[4]],[5]];
@@ -283,9 +292,9 @@ fetchURL().then(data=>{
 
 // Array Function
 
-//Array Map
-/* 
-let arr = [
+//Array Map --> Map each element and returns new array
+
+/* let arr = [
   { id:1, name:'Inba', dept:'CSE', designation:'PHP Developer' },
   { id:2, name:'Karthik', dept:'CSE', designation:'Android Developer' },
   { id:3, name:'Vasu', dept:'CSE', designation:'PHP Developer' },
@@ -293,9 +302,24 @@ let arr = [
   { id:5, name:'Naidu', dept:'CSE', designation:'PHP Developer' },
 ];
 const ids = arr.map(ele=>ele.id);
-console.log(ids); // [ 1, 2, 3, 4, 5 ]
- */
-//Array Filter
+//console.log(ids); // [ 1, 2, 3, 4, 5 ]
+
+let numbers = [1,2,3,-1];
+let mappedItems= numbers.map(ele=> ele >= 0)
+console.log(mappedItems); //[ true, true, true, false ]
+mappedItems= numbers.map(ele=> ele*2);
+console.log(mappedItems);//[ 2, 4, 6, -2 ]
+mappedItems= numbers.map(function(ele){
+  return "<li>"+ele+"</li>";
+});
+console.log(mappedItems);//[ '<li>1</li>', '<li>2</li>', '<li>3</li>', '<li>-1</li>' ]
+let joinedArr = mappedItems.join('');
+console.log(joinedArr);//<li>1</li><li>2</li><li>3</li><li>-1</li>
+
+const filteredItems= numbers.filter(ele=> ele >= 0)
+console.log(filteredItems); //[ 1, 2, 3 ] */
+
+//Array Filter 
 /*
 const filteredArr = arr.filter(element=>element.designation === "PHP Developer");
 console.log(filteredArr);
@@ -340,12 +364,14 @@ const sum = array1.reduce(
 console.log(sum); // 10 */
 
 //Check output
+//Delete Object
 
-let obj = {
+/* let obj = {
   foo:1
 }
 delete obj.Foo;
 console.log(obj.Foo); //undefined
 console.log(obj.foo); //1
 delete obj.foo;
-console.log(obj.foo);//undefined
+console.log(obj.foo);//undefined */
+
