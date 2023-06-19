@@ -40,6 +40,6 @@ app.listen(port, () => {
 
 app.get('/data', function (req, res) {
   res.render('index', {
-    title: 'DigiScheduler Backend API'
+    title: 'EzAdmin Backend Api'
   })
 })

@@ -446,4 +446,9 @@ console.log(e); //undefined
 
 ///////////////////////////////////////
 
+//npm install express --save
+//npm init
+//package lock json
+//app.use() --> The app.use() function is used to mount the specified middleware function(s) at the path which is being specified. It is mostly used to set up middleware for your application. 
+//res.status(500).send(data)
 
