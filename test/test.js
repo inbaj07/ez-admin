@@ -1,4 +1,4 @@
-var permArr = [], usedChars = [];
+/* var permArr = [], usedChars = [];
 function permute(input) {
   var i, ch;
   for (i = 0; i < input.length; i++) {
@@ -12,7 +12,7 @@ function permute(input) {
     usedChars.pop();
   }
   return permArr
-};
+}; */
 //console.log(JSON.stringify(permute([5, 3, 7, 1])))
 
 /* let count = 0;
@@ -374,4 +374,76 @@ console.log(obj.Foo); //undefined
 console.log(obj.foo); //1
 delete obj.foo;
 console.log(obj.foo);//undefined */
+
+/* var x = 10
+const abc = (x)=>{
+    console.log(x);
+}
+abc(x); //10
+x=12
+abc(x); //12
+ */
+//#######################################//
+//Hoisting
+/* abcHoistingTeset(10); //ReferenceError: Cannot access 'abcHoistingTest' before initialization
+const abcHoistingTest = (x)=>{
+    console.log(x);
+} */
+
+/* function hoist() {
+    var message;
+    console.log(message); //Hoisting
+    message = 'Hoisting is all the rage!'
+}
+hoist(); // Ouput: undefined
+ */
+
+/*  a = 10;
+let a;
+console.log(a); //ReferenceError: Cannot access 'a' before initialization
+let c;
+console.log(c); //undefined
+*/
+
+/* b=10;
+var b;
+console.log(b); //10
+*/
+
+/* function hoist() {
+    a = 20;
+    var b = 100;
+}
+hoist();
+console.log(a); //20  //Accessible as a global variable outside hoist() function
+console.log(b); //ReferenceError: b is not defined  //Since it was declared, it is confined to the hoist() function scope. We can't print it out outside the confines of the hoist() function.
+ */
+//#####################################//
+/* let a = 10;
+let a = 5; //SyntaxError: Identifier 'a' has already been declared //can't redeclare Block scope variable a
+ */
+
+/* a=10
+var a;
+console.log(a); //10
+
+b=10;
+let b;
+console.log(b); //ReferenceError: Cannot access 'b' before initialization
+//let --> Hoisting is not allowed
+ */
+
+
+/* 
+c=0;
+var c;
+console.log(c); //0    Hoisting allowed
+var d;
+console.log(d);//undefined //d not defined so "undefined assinged"
+let e;
+console.log(e); //undefined
+ */
+
+///////////////////////////////////////
+
 

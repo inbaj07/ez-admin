@@ -2,7 +2,9 @@ const express = require('express')
 const app = module.exports = express()
 const bodyParser = require('body-parser')
 const path = require('path')
+const cookieParser = require('cookie-parser');
 
+app.use(cookieParser())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
