@@ -444,6 +444,132 @@ let e;
 console.log(e); //undefined
  */
 
+//Stream Example
+
+////Let s create big file
+/* const fs = require("fs");
+const file = fs.createWriteStream("./big.file");
+for (let i=0; i<= 1e6; i++) {
+	file.write("JESUS Coming Soon! \n");
+}
+file.end(); */
+
+
+//Running the script above generates a file that’s about 400 MB File
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Here’s a simple Node web server designed to exclusively serve the big.file:
+/* const fs = require("fs");
+const server = require("http").createServer();
+server.on("request", (req, res) => {
+	fs.readFile("./big.file", (err, data) => {
+		if (err) throw err;  
+		res.end(data);
+	});
+});
+server.listen(8000); */
+
+
+
+//When we run file. It take more than 400 mb memory. It consume more. Its large file read in asynchronous.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Node’s fs module can give us a readable stream for any file using the createReadStream method. We can pipe that to the response object:
+
+/* const fs = require("fs");
+const server = require("http").createServer();
+server.on("request", (req, res) => {
+	const src = fs.createReadStream("./big.file");
+	src.pipe(res);
+});
+server.listen(8000); */
+
+//Now when you connect to this server, a magical thing happens (look at the memory consumption):(20 MB)
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//How to create Middleware
+/* var myLogger = function(req, res, next){
+	console.log("Logged");
+	next();
+};
+app.use(myLogger);	//MyLogger middleware
+ */
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//next()
+//Next is used to call next middleware
+//Eg:
+/* 
+app.use("/user/:id", function(req, res, next){
+	console.log("Request URL:", req.originalUrl);
+	next();
+}, function(req, res, next){
+	console.log("Request Type:", req.method);
+	next();
+}); */
+
+//////////////////////////////////////////////////////////////////////
+//Why we use let in for loop
+//var
+/* for (var i=0;i<3;i++){
+	console.log(i);
+	setTimeout(()=>{
+		console.log("--------------------------", i), 100;
+	});
+}
+console.log("Outside For", i); */
+/*  Output
+0
+1
+2
+Outside For 3
+-------------------------- 3
+-------------------------- 3
+-------------------------- 3
+*/
+//let
+/* for (let i=0;i<3;i++){
+	console.log(i);
+	setTimeout(()=>{
+		console.log("--------------------------", i), 100;
+	});
+} */
+//console.log("Outside For", i); //ReferenceError: i is not defined
+//Output
+/* 
+0
+1
+2
+-------------------------- 0
+-------------------------- 1
+-------------------------- 2
+*/
+////////////////////////////////////////////////////
+
+console.log("1");  //Moved to Call stack first
+
+setTimeout(function(){    //Moved to Event loop Queue Third Wait 1000 ms
+	setTimeout(function(){  //Moved to Event Loop Queue Fifth Wait 1000 ms
+		console.log("3");
+	}, 1000);
+	console.log("2");
+}, 1000); 
+
+setTimeout(function(){    //Moved to Event loop Queue fourth Wait 1000 ms
+	console.log("4");
+}, 1000);
+
+console.log("5"); //Moved to call stack Second
+//output
+/* 
+1
+5
+2
+4
+3 */
+
+
+
 ///////////////////////////////////////
 
 //npm install express --save
@@ -451,4 +577,9 @@ console.log(e); //undefined
 //package lock json
 //app.use() --> The app.use() function is used to mount the specified middleware function(s) at the path which is being specified. It is mostly used to set up middleware for your application. 
 //res.status(500).send(data)
+
+//Interview Question
+//immediate function
+//package-lock.json
+//Node Modules created or not
 
