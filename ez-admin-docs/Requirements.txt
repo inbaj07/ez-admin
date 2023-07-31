@@ -1,17 +1,18 @@
 In Project
 ------------
 
-Implement Clustering 
+Implement Clustering -- Done
 Blog
 information Idea
 Tools(conversion word to pdf, mp4 to mp3)
 Brute force generate
+Security for this app
 
 In Dev
 -----------
 Loggers implements  Inprogress 26/6/2023 --> Half done
 JEST for unit Testing - in progress 23/06/23 ---> Half Implemented
-Docker
+Docker - inprogress
 CI/CD Pipeline
 Load test Implement
 CPU Monitoring

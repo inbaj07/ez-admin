@@ -103,5 +103,63 @@ for (let i=0; i<arrL5.length; i++){
 
 //##################################Logics 5 ####################################//
 
+/* 
+{
+    "categoryId": "6491a28190f0d8ef5b8f8010",
+    "subCategory": [
+        {
+            "name": "Javascript"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "ReactJS"
+        },
+        {
+            "name": "NodeJS"
+        }
+    ]
+}
+
+{
+    "status": true,
+    "data": [
+        {
+            "_id": "6491a28190f0d8ef5b8f8010",
+            "name": "IT",
+            "subCategory": [
+                {
+                    "name": "Javascript",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "_id": "6492c354b1392a806496dc7d"
+                },
+                {
+                    "name": "Python",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "_id": "6492c354b1392a806496dc7e"
+                },
+                {
+                    "name": "ReactJS",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "_id": "6492c354b1392a806496dc7f"
+                },
+                {
+                    "name": "NodeJS",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "_id": "6492c354b1392a806496dc80"
+                }
+            ]
+        }
+    ]
+}
+
+
+*/
+
 
 
