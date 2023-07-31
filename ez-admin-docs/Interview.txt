@@ -1,3 +1,9 @@
+Interview prep
+NodeJS, MongoDB, Logics
+AWS,Dockers,Microservice,CI/PI Pipeline
+Logging,Cluster,NestJS,Socket,Modules Written?,
+
+
 AWS How do you upload and config?
 Why is nodejs single threaded?
 how to connect mongo db?

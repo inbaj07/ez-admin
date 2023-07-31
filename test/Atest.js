@@ -546,7 +546,7 @@ Outside For 3
 */
 ////////////////////////////////////////////////////
 
-console.log("1");  //Moved to Call stack first
+/* console.log("1");  //Moved to Call stack first
 
 setTimeout(function(){    //Moved to Event loop Queue Third Wait 1000 ms
 	setTimeout(function(){  //Moved to Event Loop Queue Fifth Wait 1000 ms
@@ -559,7 +559,7 @@ setTimeout(function(){    //Moved to Event loop Queue fourth Wait 1000 ms
 	console.log("4");
 }, 1000);
 
-console.log("5"); //Moved to call stack Second
+console.log("5"); //Moved to call stack Second */
 //output
 /* 
 1
@@ -567,6 +567,7 @@ console.log("5"); //Moved to call stack Second
 2
 4
 3 */
+///////////////////////////////////////////////////
 
 
 
