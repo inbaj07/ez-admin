@@ -10,7 +10,7 @@ Security for this app
 
 In Dev
 -----------
-Loggers implements  Inprogress 26/6/2023 --> Half done
+Loggers(winston) implements  Inprogress 26/6/2023 --> Half done
 JEST for unit Testing - in progress 23/06/23 ---> Half Implemented
 Docker - inprogress
 CI/CD Pipeline
