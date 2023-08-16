@@ -5,6 +5,10 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const cluster = require("cluster");
 const os = require("os");
+const helmet = require("helmet");
+
+//helmet
+app.use(helmet());
 
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -54,9 +58,3 @@ else {
 		});
 
 }
-
-app.get("/data", function (req, res) {
-	res.render("index", {
-		title: "EzAdmin Backend Api"
-	});
-});

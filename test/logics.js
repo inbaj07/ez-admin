@@ -160,6 +160,28 @@ for (let i=0; i<arrL5.length; i++){
 
 
 */
+///////////////////////////////////////////////////
+// Reverse String
+
+/* const str = "abc";
+console.log(str.split("").reverse().join("")); //cba
+
+const arr = ["a", "b", "c"];
+console.log(arr.reverse()); //[ 'c', 'b', 'a' ] */
+
+////////////////////////////////////////
+///DUPLICATE
+/* let arr = [1, 2, 3, 4, 5, 5, 6, 2, 3];
+let dupArr = [];
+for (let i=0;i<arr.length;i++){
+	if ((arr.filter(ele=>ele == arr[i])).length > 1)
+		if (!dupArr.find(ele=>ele === arr[i]))
+			dupArr.push(arr[i]);
+}  
+console.log(dupArr); */
+///////////////////////////////////////////
+
+
 
 
 

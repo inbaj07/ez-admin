@@ -1,0 +1,99 @@
+Client Interview
+----------------
+
+//////////////////////////////////////////////////////////////////////////////////
+Previous Projects
+.................
+
+    - Ecommerce Projects ---> 
+        Payment gateway --> Mcrypt ---> Adapter Design pattern
+    - Educational software(Digiclass)
+        From student join to college to exit of student from college entire workflow
+    - IVR App -->
+            Telecom industry
+                New Connection
+                Connection Problem
+                Make Payment 
+
+////////////////////////////////////////////////////////////////////////////
+Modules
+.......
+
+JWT
+bcrypt
+util
+mongodb
+mongoose
+multer
+fs
+os
+cookies
+cache
+express
+joi
+mysql
+http
+cluster
+path
+
+//////////////////////////////////////////////////////////////////////////////////
+Scenarios
+---------
+Multiple request Max cpu(Using cluster we can fix)
+outdated package(We can install latest)---> npm outdated, npm update
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Secure NodeJS App
+.................
+https://blog.sqreen.com/nodejs-security-best-practices/
+
+XSS(Cross site scripting) attack
+SQL Injection
+implement strong Authentication
+Avoid errors that reveal too much
+Set up logging and monitoring
+CORS(Cross origin resource sharing)
+implement http response headers(Helmet)(x-powered-by:express)
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Interview Question
+..................
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Logics
+......
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+Server
+......
+
+AWS,GCP
+CI/CD
+Docker
+Git Commands
+////////////////////////////////////////////////////////////////////////////////////
+Design pattern
+Microservice(pUB,sUB)
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////
+Interview Question
+Previous Projects
+Modules
+Secure NodeJS App
+Server
+Logics
+Scenarios
+Design pattern
+Microservice
+/////////////////////////////////////////////////////////////////////////////////////

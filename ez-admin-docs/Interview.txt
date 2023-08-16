@@ -11,6 +11,10 @@ Mongo db query
 mongo db indexing
 what is recursive function?
 What is async/Await?
+call,bind
+closure
+design pattern
+
 
 
 Header Usage, content type, Cookie
