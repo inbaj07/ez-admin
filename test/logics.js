@@ -249,7 +249,7 @@ const userArr = [
 const matchedArr = ids.map(ele => userArr.find(eleUser=>eleUser.id === ele));
 console.log(matchedArr); */
 ///////////////////////////////////////////
-
+/* 
 let input = "abcdefghabcdba";
 // output = {a:3, b:2}
 
@@ -273,7 +273,7 @@ for (let i=0; i<sentenceArr.length; i++){
 	output += sentenceArr[i].split("").reverse().join("") + " ";
 }
 console.log(output); //olleh dlrow 
-
+ */
 
 // * Problem
 /* let n = 5
@@ -287,7 +287,7 @@ for(let i=0;i<n;i++){
 } */
 
 //Prime Numbers Triangle
-/* let n=100;
+let n=100;
 let prime = [];
 for (let i=2;i<n;i++){
 	let flag = 0;
@@ -307,4 +307,14 @@ for (let i=0;i<prime.length;i++){
 	}
 	console.log(pNumber);
 	if (k == prime.length) break;
-} */
+}
+//Output
+/* 
+2 
+3 5 
+7 11 13 
+17 19 23 29 
+31 37 41 43 47 
+53 59 61 67 71 73 
+79 83 89 97 
+*/
