@@ -62,6 +62,8 @@ implement http response headers(Helmet)(x-powered-by:express)
 //////////////////////////////////////////////////////////////////////////////////
 Interview Question
 ..................
+NodeJS
+MongoDB
 
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -97,3 +99,14 @@ Scenarios
 Design pattern
 Microservice
 /////////////////////////////////////////////////////////////////////////////////////
+
+Previous Projects
+
+- I worked with different domains like ecommerce, education software, CRMs(Auieo ATS,etc), 
+IVR(Interactive voice Response) App(Google Dialog,)
+
+- More experience with ECommerce Domain, I worked with entire work flow since User register, Order Placement to delivery.
+I had integrated many Payment gateways like PayU, CCAvenue, PayTM, UPI, BFL, etc.
+
+- Educational Software: DigiClass--> Since Student Join to College and exit of student from College Complete Track of students, 
+

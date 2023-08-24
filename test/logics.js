@@ -180,8 +180,131 @@ for (let i=0;i<arr.length;i++){
 }  
 console.log(dupArr); */
 ///////////////////////////////////////////
+//Palindrome
+//aabbaa aaabaaa
+
+/* let str = "aabaafbaa";
+const palindromeCheck = (i, j, str)=>{
+	console.log(i, j);
+
+	if (i>j){
+		console.log("String is Palindrome");
+		return;
+	}
+	
+	if (str[i] == str[j])
+		palindromeCheck(i+1, j-1, str); 
+	else {
+		console.log("String is not Palindrome");
+		return;
+	}
+}; 
+palindromeCheck(0, str.length-1, str); */
+/////////////////////////////////////////////////////////////////////////
+//["dog", "hello", "desserts", "test", "god", "stressed"];
+
+//[["dog","god"], ["desserts","stressed"]]
+/* 
+let arr = ["dog", "hello", "desserts", "test", "god", "stressed"];
+const reverseString01 = (str)=>{
+	return str.split("").reverse().join("");
+};
+const palArr = [];
+for (let i=0;i<arr.length;i++){
+	let pal = [];
+	for (let j=i+1;j<arr.length;j++){
+		if (arr[i] === reverseString01(arr[j])){
+			pal.push(arr[i], arr[j]);
+		}
+	}
+	if (pal.length>0) palArr.push(pal);
+}
+console.log(palArr); */
+
+////////////////////////////////////////////////////////
+
+/* const ids = [1, 2];
+const userArr = [
+	{
+		id:1,
+		name:"Mike"
+	},
+	{
+		id:2,
+		name:"Simon"
+	},
+	{
+		id:3,
+		name:"Tim"
+	},
+	{
+		id:4,
+		name:"Tom"
+	},
+	{
+		id:5,
+		name:"Michel"
+	},
+];
+const matchedArr = ids.map(ele => userArr.find(eleUser=>eleUser.id === ele));
+console.log(matchedArr); */
+///////////////////////////////////////////
+
+let input = "abcdefghabcdba";
+// output = {a:3, b:2}
+
+let obj = {};
+for (let i=0;i<input.length;i++){
+	if (!obj[input[i]]){
+		obj[input[i]] = 1;
+	}
+	else
+		obj[input[i]]++;
+
+}
+console.log(obj);  //{ a: 3, b: 3, c: 2, d: 2, e: 1, f: 1, g: 1, h: 1 }
+
+let input2 = "hello world";
+// output = "olleh dlrow";
+let sentenceArr = input2.split(" ");
+
+let output = "";
+for (let i=0; i<sentenceArr.length; i++){
+	output += sentenceArr[i].split("").reverse().join("") + " ";
+}
+console.log(output); //olleh dlrow 
 
 
+// * Problem
+/* let n = 5
+for(let i=0;i<n;i++){
+    let star = "";
+    for(let j=0;j<=i;j++){
+        star += "*";
+    }
+    console.log(star)
+    //console.log("\n")
+} */
 
-
-
+//Prime Numbers Triangle
+/* let n=100;
+let prime = [];
+for (let i=2;i<n;i++){
+	let flag = 0;
+	for (let j=2;j<i;j++){
+		if (i%j == 0) flag = 1;
+	}
+	if (flag == 0) prime.push(i);
+}
+console.log(prime);
+let k=0;
+for (let i=0;i<prime.length;i++){
+	let pNumber = "";
+	for (let j=0; j<=i; j++){
+		if (k == prime.length) break;
+		pNumber += prime[k] + " ";
+		k++;
+	}
+	console.log(pNumber);
+	if (k == prime.length) break;
+} */
