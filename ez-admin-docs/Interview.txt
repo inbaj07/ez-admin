@@ -2,42 +2,6 @@ Interview prep
 NodeJS, MongoDB, Logics
 AWS,Dockers,Microservice,CI/PI Pipeline
 Logging,Cluster,NestJS,Socket,Modules Written?,
-/* 
-
-2
-
-3 5
-
-7 11 13
-*/
-
-const num = 200
-const prime = [];
-for(let i=2;i<num; i++){
-    let count = 0;
-    for(let j=2;j<i;j++){
-        if(i%j == 0)
-            count++;
-    }
-    if(count == 0)
-        prime.push(i);
-}
-//console.log(prime)
-
-let k = 0;
-for(let i=0;i<prime.length;i++){
-    const arr = []
-    for(let j=0;j<=i;j++){
-        
-        if(prime[k]) arr.push(prime[k]);
-        k=k+1;
-    }
-    if(arr.length >0){
-        console.log(arr);
-        console.log("\n");
-    }
-    
-}
 
 AWS How do you upload and config?
 Why is nodejs single threaded?
@@ -49,6 +13,7 @@ What is async/Await?
 call,bind
 closure
 design pattern
+Complexity Calc
 
 
 
@@ -111,7 +76,7 @@ res.send('<p>some html</p>')
 
 When the parameter is an Array or Object, Express responds with the JSON representation:
 EG:
-res.send({ user: 'tobi' })
+res.send({ user: 'xxx' })
 res.send([1, 2, 3])
 
 res.sendFile()

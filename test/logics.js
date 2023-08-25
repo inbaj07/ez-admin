@@ -287,7 +287,7 @@ for(let i=0;i<n;i++){
 } */
 
 //Prime Numbers Triangle
-let n=100;
+/* let n=105;
 let prime = [];
 for (let i=2;i<n;i++){
 	let flag = 0;
@@ -307,7 +307,7 @@ for (let i=0;i<prime.length;i++){
 	}
 	console.log(pNumber);
 	if (k == prime.length) break;
-}
+} */
 //Output
 /* 
 2 
@@ -316,5 +316,58 @@ for (let i=0;i<prime.length;i++){
 17 19 23 29 
 31 37 41 43 47 
 53 59 61 67 71 73 
-79 83 89 97 
+79 83 89 97 101 103  
 */
+//##################################Logics 6 ####################################//
+//Print Number Highest Duplicates
+//Input: [1,2,3,3,3,4,4,5,6,7,7,7,7,8,8,9]
+//Output: 7: 4 //duplicates
+
+/* const arrLogics6 = [1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 7, 7, 8, 8, 9];
+const data = [...new Set(arrLogics6)];
+console.log(data);
+let highestNum = 0;
+let count = 0;
+let Logics6 = [];
+for (let i=0; i<data.length; i++){
+	Logics6 = arrLogics6.filter(ele=>ele == data[i]);
+	if (count < Logics6.length){
+		count = Logics6.length;
+		highestNum = data[i];
+	}        
+} */
+//console.log(highestNum+": "+count+" duplicates"); //7: 4 duplicates
+//##################################Logics 6 ####################################//
+//################################## Test ####################################//
+/* [ 
+    { id:1, name: 'Shubham' }, 
+    { id:3, name: 'Vikas' }, 
+    { id:2, name: 'Akshay' }, 
+    { id:4, name: 'Surendra' } ]
+
+Output ===> { Shubham: 1, Vikas:3, Akshay: 2, Surendra:4 } */
+const obj = {};
+const testArr = [ 
+	{ id:1, name: "Mike" }, 
+	{ id:3, name: "Tim" }, 
+	{ id:2, name: "Michael" }, 
+	{ id:4, name: "Jane" } ];
+testArr.map(function(ele){
+	return obj[ele.name] = ele.id; 
+});
+console.log(obj);
+
+//[1,2,3,3,3,4,4,5,6,7,7,7,7,8,8,9]
+const testArr01 = [1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 7, 7, 8, 8, 9];
+const newArrTest01 = [...new Set(testArr01)];
+let count = 0;
+let highestNumDup = 0; 
+for (let i=0;i<newArrTest01.length;i++){
+	let c = (testArr01.filter(ele=>ele===newArrTest01[i])).length;
+	if (count < c){
+		count = c;
+		highestNumDup = newArrTest01[i];
+	}
+}
+console.log(highestNumDup+": "+count+" "+"times");
+//################################## TEST ####################################//

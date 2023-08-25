@@ -19,8 +19,8 @@ Previous Projects
 Modules
 .......
 
-JWT
-bcrypt
+JWT - JWT Sign, JWT Verify using Hash key
+bcrypt - Using salt encrypt password
 util
 mongodb
 mongoose
@@ -36,6 +36,12 @@ http
 cluster
 path
 
+aws-sdk
+aws-serverless-express
+Winston(Logging)
+helmet
+CORS
+
 //////////////////////////////////////////////////////////////////////////////////
 Scenarios
 ---------
@@ -50,11 +56,11 @@ Secure NodeJS App
 https://blog.sqreen.com/nodejs-security-best-practices/
 
 XSS(Cross site scripting) attack
+CORS(Cross origin resource sharing)
 SQL Injection
 implement strong Authentication
 Avoid errors that reveal too much
 Set up logging and monitoring
-CORS(Cross origin resource sharing)
 implement http response headers(Helmet)(x-powered-by:express)
 
 
@@ -76,7 +82,7 @@ Logics
 Server
 ......
 
-AWS,GCP
+AWS(Elastic Search, Rabbit MQ),GCP
 CI/CD
 Docker
 Git Commands
