@@ -346,7 +346,7 @@ for (let i=0; i<data.length; i++){
     { id:4, name: 'Surendra' } ]
 
 Output ===> { Shubham: 1, Vikas:3, Akshay: 2, Surendra:4 } */
-const obj = {};
+/* const obj = {};
 const testArr = [ 
 	{ id:1, name: "Mike" }, 
 	{ id:3, name: "Tim" }, 
@@ -355,10 +355,11 @@ const testArr = [
 testArr.map(function(ele){
 	return obj[ele.name] = ele.id; 
 });
-console.log(obj);
+console.log(obj); */
 
 //[1,2,3,3,3,4,4,5,6,7,7,7,7,8,8,9]
-const testArr01 = [1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 7, 7, 8, 8, 9];
+/* const testArr01 = [1, 2, 3, 3, 3, 4, 4, 5, 6, 7, 7, 7, 7, 8, 8, 9];
+//Highest Number Duplicate
 const newArrTest01 = [...new Set(testArr01)];
 let count = 0;
 let highestNumDup = 0; 
@@ -369,5 +370,195 @@ for (let i=0;i<newArrTest01.length;i++){
 		highestNumDup = newArrTest01[i];
 	}
 }
-console.log(highestNumDup+": "+count+" "+"times");
+console.log(highestNumDup+": "+count+" "+"times"); */
 //################################## TEST ####################################//
+
+//3i infotech
+
+//Questions Blocked me
+//MongoDB Aggregation
+//MongoDB Query
+//Axios
+//How to write Middleware
+
+
+/* type of nan
+"0"+5 === "05"
+
+0===false
+call bind
+obsevable
+ */
+/* 
+console.log(typeof(NaN));//number
+console.log(typeof(null));//Object
+console.log(typeof(undefined));//undefined
+console.log("0"+5 === "05");//true
+console.log(0===false);//false
+console.log(0==false);//true
+ */
+/* ------------------------------------------------------------------------------------
+Crion
+----------
+------------
+const user = require("./controller/User");
+
+app.get("user/list",user.userList);
+
+
+
+//Controller
+
+const userList = async()=>{
+    sql = "select firstname,lastname,email,dob,status from user ";
+
+}
+
+student
+name, id,mark  deptid
+
+1 Inba 100
+2 Test2 100
+3 test3 90
+4 test4 100
+
+
+
+create table student(id int(5),name varchar(40),mark int(3))
+
+dept
+id deptname studentid
+1   CSE     1
+2   ECE     2
+3   EEE     3
+
+
+select s.name,d.deptname from student S 
+INNER JOIN ON dept D D.studentid = S.id
+
+
+name    deptname
+Inba    CSE
+Test2   ECE
+test3   EEE
+test4   null
+
+-----------------------------------------
+db.orders.aggregate([
+    {
+        $lookup:{
+            from:"users",
+            localField:"userDetails.uId",
+            foreignField:"_id",
+            as: "orderDetails"     
+            }
+    }
+    ]);
+--------------------------------------------
+ */
+
+// 0 1 1 2 3 5 8 13 . . . . 
+// 0 1 2 3 4 5 6 7 . . . . .
+
+const fibonacciSeries = (n)=>{
+	let i=2;
+	let a = 0;
+	let b = 1;
+	if (n == 0) return 0;
+	if (n == 1) return 1;
+	while (i<=n){
+		let c = BigInt(a)+BigInt(b);
+		if (i==n) return BigInt(c);
+		a=BigInt(b);
+		b=BigInt(c);
+		i++;		
+	}
+};
+//console.log(fibonacciSeries(10000));
+/* function fibonacci(n) {
+	let sequence = [0n, 1n];
+  
+	for (let i = 2; i <= n; i++) {
+		sequence[i] = BigInt(sequence[i - 1])
+            + BigInt(sequence[i - 2]);
+	}
+	return sequence;
+}
+console.log(fibonacci(1000)); */
+
+
+/* function towerOfHanoi(n, from_rod,  to_rod,  aux_rod)
+{
+	if (n == 0) return;	
+	towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+	console.log(n + " : " + from_rod + " to " + to_rod);
+	towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+}  
+var N = 1;      
+// A, B and C are names of rods
+towerOfHanoi(N, "A", "B", "C"); */
+/* 
+function migrateRings(n, source,  destination,  aux)
+{
+	if (n == 0) return;	
+	migrateRings(n - 1, source, aux, destination);
+	console.log(n + " : " + source + " to " + destination);
+	migrateRings(n - 1, aux, destination, source);
+}  
+let N = 3;      
+migrateRings(N, "A", "B", "C"); */
+
+/* 
+//Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
+
+
+const similarWord = (arr,word)=>{
+  if(arr.length === 0){
+    arr = [[word]];
+    return arr;
+  }
+    
+  for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i].length; j++){
+      if(arr[i][j].length === word.length){
+        for(let k=0;k<word.length;k++){
+          console.log(arr[i][j].split(''))
+          if(arr[i][j].split('').find(ele=>ele === word[k])){
+            if(k===word.length - 1)
+              arr[i].push(word)
+          }
+        }
+      }
+    }
+  }
+  return arr;
+}
+
+var givenArr =  ["eat", "tea", "tan", "ate", "nat", "bat"]
+let outputArr = [];
+for(let i=0;i<givenArr.length;i++){
+  outputArr =  similarWord(outputArr,givenArr[i]);
+  console.log(outputArr)
+} */
+
+
+/* const permute = function(nums){
+	let result = [];
+	if (nums.length == 0) return [];
+	if (nums.length == 1) return [nums];
+	for (let i=0;i<nums.length;i++){
+	  const currentNum = nums[i];
+	  const remainingNums = nums.slice(0, i).concat(nums.slice(i+1));
+	  console.log(remainingNums);
+	  const remainingNumsPermuted = permute(remainingNums);
+	  console.log(remainingNumsPermuted.length);
+	  console.log(remainingNumsPermuted);
+	  console.log("\n");
+	  for (let j=0;j<remainingNumsPermuted.length;j++){
+		  const permutedArr = [currentNum].concat(remainingNumsPermuted[j]);
+		  result.push(permutedArr);
+	  }
+  
+	}
+};
+console.log(permute([1, 2, 3])); */

@@ -1,14 +1,26 @@
-Client Interview
-----------------
+##################################
+#########Client Interview#########
+##################################
+
+//////////////////////////////////////////////////////////////////////////////////f
+Important to Work on
+....................
+
+Microservice PUB/SUB *
+Docker MongoDB *
+CI/CD
+
+MongoDB Queries and Aggregation *****
+
 
 //////////////////////////////////////////////////////////////////////////////////
 Previous Projects
 .................
 
     - Ecommerce Projects ---> 
-        Payment gateway --> Mcrypt ---> Adapter Design pattern
+        POS, Payment gateway --> Mcrypt ---> Adapter Design pattern
     - Educational software(Digiclass)
-        From student join to college to exit of student from college entire workflow
+        Since students join to college and exit of student from college capture entire workflow
     - IVR App -->
             Telecom industry
                 New Connection
@@ -22,8 +34,7 @@ Modules
 JWT - JWT Sign, JWT Verify using Hash key
 bcrypt - Using salt encrypt password
 util
-mongodb
-mongoose
+mongoose - mongodb
 multer
 fs
 os
@@ -36,7 +47,7 @@ http
 cluster
 path
 
-aws-sdk
+aws-sdk -  store data to aws bucket(images, files)
 aws-serverless-express
 Winston(Logging)
 helmet
@@ -116,3 +127,4 @@ I had integrated many Payment gateways like PayU, CCAvenue, PayTM, UPI, BFL, etc
 
 - Educational Software: DigiClass--> Since Student Join to College and exit of student from College Complete Track of students, 
 
+/////////////////////////////////////////////////////////////////////////

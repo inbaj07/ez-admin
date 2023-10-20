@@ -559,7 +559,7 @@ setTimeout(function(){    //Moved to Event loop Queue fourth Wait 1000 ms
 	console.log("4");
 }, 1000);
 
-console.log("5"); //Moved to call stack Second */
+console.log("5"); //Moved to call stack Second  */
 //output
 /* 
 1
