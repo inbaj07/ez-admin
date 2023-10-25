@@ -1,0 +1,142 @@
+Interview prep
+NodeJS, MongoDB, Logics
+AWS,Dockers,Microservice,CI/PI Pipeline
+Logging,Cluster,NestJS,Socket,Modules Written?,
+
+AWS How do you upload and config?
+Why is nodejs single threaded?
+how to connect mongo db?
+Mongo db query
+mongo db indexing
+what is recursive function?
+What is async/Await?
+call,bind
+closure
+design pattern
+Complexity Calc
+
+
+
+Header Usage, content type, Cookie
+pay load type json,text diff
+res.send res.json
+
+Process
+-------
+The process core module of Node.js provides the env property which hosts all the environment variables 
+that were set at the moment the process was started.
+eg:  const port = const port = process.env.PORT;
+
+Authentication vs Authorization
+-------------------------------
+Authentication - Verify user and password
+Authorization - Granting access to user, Whether you can access page or module or read write access
+
+Header
+------
+- Request Header
+- Response Header
+- Representative Header
+
+user-agent: postman or linux
+content-type: text/html or text/json
+connection: keep-alive
+accept-encoding:gzip
+
+res.end()
+---
+- Ends the response process
+- Use to quickly end the response without any data. If you need to respond with data, instead use methods such as res.send() and res.json().
+eg: 
+res.end()
+res.status(404).end()
+
+res.send([body])
+----------------
+The body parameter can be a Buffer object, a String, an object, Boolean, or an Array. 
+
+For example:
+res.send(Buffer.from('whoop'))
+res.send({ some: 'json' })
+res.send('<p>some html</p>')
+res.status(404).send('Sorry, we cannot find that!')
+res.status(500).send({ error: 'something blew up' })
+
+it automatically assigns the Content-Length HTTP response header field (unless previously defined) 
+and provides automatic HEAD and HTTP cache freshness support
+
+When the parameter is a Buffer object, the method sets the Content-Type response header field to “application/octet-stream”, unless previously defined as shown below:
+EG:
+res.set('Content-Type', 'text/html')
+res.send(Buffer.from('<p>some html</p>'))
+
+When the parameter is a String, the method sets the Content-Type to “text/html”:
+EG:
+res.send('<p>some html</p>')
+
+When the parameter is an Array or Object, Express responds with the JSON representation:
+EG:
+res.send({ user: 'xxx' })
+res.send([1, 2, 3])
+
+res.sendFile()
+--------------
+
+
+res.set(field [, value])
+--------------------------
+EG: 
+res.set('Content-Type', 'text/plain')
+
+res.set({
+  'Content-Type': 'text/plain',
+  'Content-Length': '123',
+  ETag: '12345'
+})
+-----------------------------------------------
+res.json([body])
+---------------
+- Sends a JSON response. that is the parameter converted to a JSON string using JSON.stringify()
+- The parameter can be any JSON type, including object, array, string, Boolean, number, or null, and you can also use it to convert other values to JSON.
+
+res.json(null)
+res.json({ user: 'tobi' })
+res.status(500).json({ error: 'message' })
+
+res.redirect([status,] path)
+------------------------------
+res.redirect('/foo/bar')
+res.redirect('http://example.com')
+res.redirect(301, 'http://example.com')
+res.redirect('../login')
+
+res.render(view [, locals] [, callback])
+-----------------------------------------
+// send the rendered view to the client
+res.render('index')
+
+res.status(code)
+-----------------
+res.status(403).end()
+res.status(400).send('Bad Request')
+res.status(404).sendFile('/absolute/path/to/404.png')
+
+res.type(type)
+--------------
+res.type('.html')
+// => 'text/html'
+res.type('html')
+// => 'text/html'
+res.type('json')
+// => 'application/json'
+res.type('application/json')
+// => 'application/json'
+res.type('png')
+// => 'image/png'
+
+
+
+
+
+
+

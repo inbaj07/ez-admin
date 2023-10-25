@@ -1,0 +1,27 @@
+In Project
+------------
+
+Implement Clustering -- Done
+Blog
+information Idea
+Tools(conversion word to pdf, mp4 to mp3)
+Brute force generate
+Security for this app
+
+In Dev
+-----------
+Loggers(winston) implements  Inprogress 26/6/2023 --> Half done
+JEST for unit Testing - in progress 23/06/23 ---> Half Implemented
+Docker - inprogress
+CI/CD Pipeline
+Load test Implement
+CPU Monitoring
+AWS implementation
+Configuration Load when run server for diff countries, diff env, automatic change DB
+
+
+//
+AWS
+AWS SNS
+object Literals
+payment gateway paytm, ccavenue, upi, payU Money
