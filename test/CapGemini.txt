@@ -1,0 +1,140 @@
+##################################
+#########Client Interview#########
+##################################
+
+//////////////////////////////////////////////////////////////////////////////////f
+Important to Work on
+....................
+
+Microservice PUB/SUB *
+Docker MongoDB *
+CI/CD
+
+MongoDB Queries and Aggregation *****
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Previous Projects
+.................
+
+    - Ecommerce Projects ---> 
+        POS, Payment gateway --> Mcrypt ---> Adapter Design pattern
+    - Educational software(Digiclass)
+        Since students join to college and exit of student from college capture entire workflow
+    - IVR App -->
+            Telecom industry
+                New Connection
+                Connection Problem
+                Make Payment 
+
+////////////////////////////////////////////////////////////////////////////
+Modules
+.......
+
+JWT - JWT Sign, JWT Verify using Hash key
+bcrypt - Using salt encrypt password
+util
+mongoose - mongodb
+multer
+fs
+os
+cookies
+cache
+express
+joi
+mysql
+http
+cluster
+path
+
+aws-sdk -  store data to aws bucket(images, files)
+aws-serverless-express
+Winston(Logging)
+helmet
+CORS
+
+//////////////////////////////////////////////////////////////////////////////////
+Scenarios
+---------
+Multiple request Max cpu(Using cluster we can fix)
+outdated package(We can install latest)---> npm outdated, npm update
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Complex Scenario handled or faced
+----------------------
+Dashboard loading slow, Implemented Caching in Digiclass
+Reports in Digiclass
+Visitor and Vendor Management System(VVMS) --> Dynamic Form, If create a tenant, DB Created, Forms Created
+Fillbelly printer implementation using shell script and ms sql
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Secure NodeJS App
+.................
+https://blog.sqreen.com/nodejs-security-best-practices/
+
+XSS(Cross site scripting) attack
+CORS(Cross origin resource sharing)
+SQL Injection
+implement strong Authentication
+Avoid errors that reveal too much
+Set up logging and monitoring -- Winston
+implement http response headers(Helmet)(x-powered-by:express)
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Interview Question
+..................
+NodeJS
+MongoDB
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Logics
+......
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+Server
+......
+
+AWS(Elastic Search, Rabbit MQ),GCP
+CI/CD
+Docker
+Git Commands
+////////////////////////////////////////////////////////////////////////////////////
+Design pattern
+Microservice(pUB,sUB)
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////
+Interview Question
+Previous Projects
+Modules
+Secure NodeJS App
+Server
+Logics
+Scenarios
+Design pattern
+Microservice
+/////////////////////////////////////////////////////////////////////////////////////
+
+Previous Projects
+
+- I worked with different domains like ecommerce, education software, CRMs(Auieo ATS,etc), 
+IVR(Interactive voice Response) App(Google Dialog,)
+
+- More experience with ECommerce Domain, I worked with entire work flow since User register, Order Placement to delivery.
+I had integrated many Payment gateways like PayU, CCAvenue, PayTM, UPI, BFL, etc.
+
+- Educational Software: DigiClass--> Since Student Join to College and exit of student from College Complete Track of students, 
+
+/////////////////////////////////////////////////////////////////////////

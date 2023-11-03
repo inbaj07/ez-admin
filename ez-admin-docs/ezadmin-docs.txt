@@ -1,0 +1,24 @@
+Blog
+Comments
+category
+
+Blog:
+_id,
+heading,
+name,
+blogCategory,
+status(unpublish,publish,blocked,unblocked),
+user(jsonformat {firstname,lastname, username,email})
+views,  ---> total views
+likes, --> total likes
+saved, --> saved count 
+comments ---> total comments
+share --> share icon to mail
+keyWords ---> seo keywords
+createdDate,
+editedDetails(json format),
+editedDetails : {
+    date: 10/01/2023 11:32 PM,
+    oldContent:"old Content",
+    newContent:"new Content"
+}
