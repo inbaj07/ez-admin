@@ -562,3 +562,90 @@ for(let i=0;i<givenArr.length;i++){
 	}
 };
 console.log(permute([1, 2, 3])); */
+
+
+/////////////////////////////////////////////////////////////////////////////////
+/* Given: [1, 2, 3, 4, 5] and [2, 4, 6, 8, 10]
+Output: 2 and 4
+Question: Find the same numbers in those two arrays?
+
+ */
+
+/* let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [2, 4, 6, 8, 10];
+for (let i=0;i<arr1.length;i++){
+	const data = arr2.find(ele=>ele == arr1[i]);
+	if (data)
+		console.log(data);
+} */
+//////////////////////////////////////////////////////////////////////////////////////////
+//least Duplicate
+
+const leastDuplicateInArray = function(arr){
+	let leastDuplicate = 0;
+	let data = 0;
+	for (let i=0;i<arr.length;i++){
+		if (leastDuplicate == 0){
+			leastDuplicate = (arr.filter(ele=>ele == arr[i])).length;
+			data = arr[i];
+		}
+		else if (leastDuplicate > arr.filter(ele=>ele == arr[i]).length){
+			leastDuplicate = arr.filter(ele=>ele == arr[i]).length;
+			data = arr[i];
+		}
+	}
+	return { leastDuplicate, data };
+};
+//const arrLD = [1, 1, 2, 3, 3, 3];
+//console.log(leastDuplicateInArray(arrLD));
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+/* Given: Hello World
+Requirement:
+- Change all consonants to lowercase
+- Change all vowels to uppercase
+ 
+Output: "hEllO wOrld" */
+
+const str = "Hello World";
+const vowels = ["a", "e", "i", "o", "u"];
+let arrHello = str.split("");
+for (let i=0;i<arrHello.length;i++){
+	if (vowels.find(ele=>ele===arrHello[i].toLowerCase()))
+		arrHello[i] = arrHello[i].toUpperCase();
+	else
+		arrHello[i] = arrHello[i].toLowerCase();
+}
+let str2 = arrHello.join("");
+//console.log(str2)
+/////////////////////////////////////////////////////////////////////
+
+
+/* const reverseString01 = function(str){
+	return str.split("").reverse().join("");
+};
+
+const isPalindrome = function(str){
+	if (str.length == 1 && str.length == 2) return false;
+	if (str === reverseString01(str)) return true;
+	return false;
+};
+let palindromeStr = "aabccssddssftfyjy";
+let largestPalindromeStringCount = 0;
+let largestPalindromeString = "";
+let i=0;
+for (let j=1;j<palindromeStr.length;j++){
+	const slicedStr = palindromeStr.slice(i, j);
+	console.log(slicedStr);
+	if (isPalindrome(slicedStr)){
+		i=j+1;
+		j=i+1;
+		if (slicedStr.length > largestPalindromeStringCount){
+			largestPalindromeString = slicedStr;
+			largestPalindromeStringCount = slicedStr.length;
+		}
+	}
+} */
+ 
+//console.log(largestPalindromeString, largestPalindromeStringCount);

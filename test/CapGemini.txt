@@ -60,6 +60,16 @@ Multiple request Max cpu(Using cluster we can fix)
 outdated package(We can install latest)---> npm outdated, npm update
 
 
+//////////////////////////////////////////////////////////////////////////////////
+Complex Scenario handled or faced
+----------------------
+Dashboard loading slow, Implemented Caching in Digiclass
+Reports in Digiclass
+Visitor and Vendor Management System(VVMS) --> Dynamic Form, If create a tenant, DB Created, Forms Created
+Fillbelly printer implementation using shell script and ms sql
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////
 Secure NodeJS App
@@ -71,7 +81,7 @@ CORS(Cross origin resource sharing)
 SQL Injection
 implement strong Authentication
 Avoid errors that reveal too much
-Set up logging and monitoring
+Set up logging and monitoring -- Winston
 implement http response headers(Helmet)(x-powered-by:express)
 
 
