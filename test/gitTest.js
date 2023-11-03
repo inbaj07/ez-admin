@@ -1,1 +1,1 @@
-"1 - ez-admin-testgggggggggg";
+"ez-admin-test";
